@@ -24,8 +24,9 @@ body:
       description: How can we reproduce this issue?
       placeholder: |
         1. Go to lt2q.majdoddin.com
-        2. Upload my .asc file
+        2. Upload my .asc file (created with LTSpice version: X.X.X)
         3. Click convert
         4. See error...
+        5. (Optional) Tried opening result in QSpice version: X.X.X
     validations:
       required: true
