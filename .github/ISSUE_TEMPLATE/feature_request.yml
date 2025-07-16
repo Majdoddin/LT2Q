@@ -9,54 +9,34 @@ body:
         Thanks for suggesting a feature! Please provide details about what you'd like to see added.
         
   - type: input
-    id: feature-summary
+    id: feature-title
     attributes:
-      label: Feature Summary
+      label: Feature Title
       description: Brief description of the feature you'd like
       placeholder: "e.g., Support for subcircuit (.sub) files"
     validations:
       required: true
       
   - type: textarea
-    id: problem
+    id: explanation
     attributes:
-      label: What problem does this solve?
-      description: Describe the problem or limitation this feature would address
-      placeholder: "Currently, I can't convert circuits that use subcircuits..."
+      label: Explanation
+      description: |
+        Please describe:
+        • What problem does this solve?
+        • How would you like this feature to work?
+        • Why is this important for your workflow?
+        • Any examples or use cases
+        • LTSpice version: X.X.X (used to create schematic)
+        • QSpice version: X.X.X (used for viewing/running)
+      placeholder: |
+        Currently, I can't convert circuits that use subcircuits (.sub files). 
+        
+        The converter should detect and process .sub files along with the main .asc file...
+        
+        This would be helpful because many complex circuits rely on subcircuits...
+        
+        LTSpice version: XVII (17.0.37)
+        QSpice version: 24.3.4
     validations:
       required: true
-      
-  - type: textarea
-    id: solution
-    attributes:
-      label: Proposed solution
-      description: How would you like this feature to work?
-      placeholder: "The converter should detect .sub files and..."
-    validations:
-      required: true
-      
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternative solutions
-      description: Are there any workarounds or alternative approaches?
-      placeholder: "Currently I have to manually recreate subcircuits..."
-      
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this feature to you?
-      options:
-        - Low - Nice to have
-        - Medium - Would be helpful
-        - High - Critical for my workflow
-    validations:
-      required: true
-      
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional context
-      description: Any other information about this feature request
-      placeholder: "Examples, screenshots, related issues, etc."
