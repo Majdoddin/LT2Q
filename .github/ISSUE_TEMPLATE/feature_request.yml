@@ -1,0 +1,62 @@
+name: Feature Request
+description: Suggest a new feature for the LTSpice to QSpice converter
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please provide details about what you'd like to see added.
+        
+  - type: input
+    id: feature-summary
+    attributes:
+      label: Feature Summary
+      description: Brief description of the feature you'd like
+      placeholder: "e.g., Support for subcircuit (.sub) files"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the problem or limitation this feature would address
+      placeholder: "Currently, I can't convert circuits that use subcircuits..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would you like this feature to work?
+      placeholder: "The converter should detect .sub files and..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative solutions
+      description: Are there any workarounds or alternative approaches?
+      placeholder: "Currently I have to manually recreate subcircuits..."
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Critical for my workflow
+    validations:
+      required: true
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other information about this feature request
+      placeholder: "Examples, screenshots, related issues, etc."

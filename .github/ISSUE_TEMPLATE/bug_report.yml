@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a problem with the LTSpice to QSpice converter
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please provide as much detail as possible.
+        
+  - type: input
+    id: circuit-file
+    attributes:
+      label: Circuit File
+      description: What type of LTSpice file are you trying to convert?
+      placeholder: "e.g., Simple op-amp circuit, Power supply design, etc."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen
+      placeholder: "The converter failed to convert my circuit file..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to lt2q.majdoddin.com
+        2. Upload my .asc file
+        3. Click convert
+        4. See error...
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browser are you using?
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other information that might help us debug this issue
+      placeholder: "File size, error messages, screenshots, etc."
